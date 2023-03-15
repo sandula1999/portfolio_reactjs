@@ -1,0 +1,101 @@
+.aboutme {
+  transform: scale(0.7);
+  padding: 3rem 4rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-bottom: 8rem;
+  margin-left: -10rem;
+  margin-top: -2rem;
+  margin-bottom: 0;
+}
+.myself {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.myself > :nth-child(1) {
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.myself > :nth-child(2) {
+  color: var(--orange);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.info > h3 > span {
+  color: rgb(7, 6, 6);
+  padding: 0 0.5rem;
+  font-size: 35px;
+  font-weight: bold;
+}
+.info > h3 {
+  font-size: 2rem;
+  color: var(--orange);
+  padding: -1rem 0;
+  font-weight: normal;
+}
+.myselfcard {
+  position: relative;
+}
+.myselfcard > * {
+  position: absolute;
+}
+.myselfcard > img > :nth-child(3) {
+  transform: scale(1.5);
+}
+.myselfcard > img > :nth-child(4) {
+  transform: scale(1.5);
+}
+.blur4 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(-12px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+.Acard {
+  position: relative;
+}
+.Acard > * {
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .aboutme {
+    transform: scale(0.9);
+    margin-top: 3rem;
+    margin-left: -1rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 3rem;
+    padding: 0;
+  }
+  .aboutme span:nth-child(1) {
+    font-size: 3rem;
+  }
+  .aboutme span:nth-child(2) {
+    font-size: 3rem;
+  }
+  .info {
+    margin-left: -3rem;
+    margin-top: -5rem;
+    transform: scale(0.6);
+  }
+  .info > h3 > span {
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+  }
+  .info > h3 {
+    font-size: 2rem;
+    color: var(--orange);
+    font-weight: normal;
+  }
+
+  .myselfcard {
+    display: none;
+  }
+}

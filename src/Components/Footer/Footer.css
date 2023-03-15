@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -15rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 4rem;
+  color: rgb(12, 11, 11);
+}
+.f-content > span {
+  font-size: 1.5rem;
+}
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: -7rem;
+    height: 13rem;
+  }
+  .footer img {
+    height: 21rem;
+  }
+  .f-content {
+    margin-top: 5rem;
+    transform: scale(0.7);
+  }
+  .f-content span:nth-of-type(1) {
+    margin-left: 2rem;
+    font-size: 25px;
+  }
+}

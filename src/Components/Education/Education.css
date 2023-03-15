@@ -1,0 +1,90 @@
+.education {
+  transform: scale(0.7);
+  padding: 3rem 4rem 0rem 3rem;
+  display: flex;
+  height: 90vh;
+  margin-left: -10rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+.myedu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.myedu > :nth-child(1) {
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.myedu > :nth-child(2) {
+  color: var(--orange);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.educard {
+  position: absolute;
+}
+.educard > * {
+  position: absolute;
+}
+.blurN {
+  position: absolute;
+  width: 70rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(90px);
+  z-index: -10;
+  top: 30%;
+  left: 10%;
+}
+.blurP {
+  position: absolute;
+  width: 50rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(90px);
+  z-index: -5;
+  top: -1%;
+
+  left: -9rem;
+}
+@media screen and (max-width: 480px) {
+  .education {
+    margin-top: 30rem;
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: -1rem;
+    margin-top: 25rem;
+    height: 45rem;
+    padding: 0;
+  }
+  .myedu {
+    margin-top: -4rem;
+  }
+  .myedu span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .myedu span:nth-child(2) {
+    font-size: 2rem;
+  }
+  .blurN {
+    display: none;
+  }
+  .blurP {
+    display: none;
+  }
+  .educard {
+    margin-top: -10rem;
+    display: flex;
+    transform: scale(1);
+    flex-direction: column;
+    margin-left: -1rem;
+    gap: 18rem;
+  }
+  .educard > * {
+    position: static;
+  }
+}

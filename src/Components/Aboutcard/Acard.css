@@ -1,0 +1,31 @@
+.acard {
+  width: 10rem;
+  height: 6.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 9rem;
+  text-align: center;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border: 7px solid rgb(133, 60, 134);
+  border-radius: 20px;
+  padding: 0px 26px 2rem 26px;
+}
+.acard span:nth-of-type(1) {
+  color: var(--gray);
+  font-size: 20px;
+  font-weight: bold;
+}
+.acard > img {
+  transform: scale(0.5);
+  margin-bottom: -2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .acard {
+    width: auto;
+  }
+}
